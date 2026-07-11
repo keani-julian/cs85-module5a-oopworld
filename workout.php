@@ -22,7 +22,7 @@ class Workout {
     public function summary() {
         return "Workout: {$this->exercise} on {$this->date} — {$this->sets} sets x {$this->reps} reps @ {$this->weight} lbs";
     }
-
+ 
     // Method 2: returning a calculated value
     // Prediction: 4320 (calculated as sets * reps * weight = 4*8*135)
     public function totalVolume() {
