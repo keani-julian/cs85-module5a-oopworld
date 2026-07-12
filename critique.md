@@ -1,5 +1,8 @@
 # Module 5a: AI generated method and critique
 
+## GitHub Repo for Module5a: 
+https://github.com/keani-julian/cs85-module5a-oopworld/blob/main/critique.md 
+
 ## Exact prompt I used: 
 "Write a PHP method for my Workout class that estimates my one-rep max from the existing $weight and $reps properties. Use a well-known lifting formula."
 
