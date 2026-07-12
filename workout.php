@@ -48,6 +48,14 @@ class Workout {
             return "Light intensity";
         }
     }
+
+    // AI generated method 5: estimate 1 rep max
+    public function estimateOneRepMax() {
+        if ($this->weight <= 0 || $this->reps <= 0) {
+            return 0;
+        }
+        return round($this->weight * (1 + $this->reps / 30), 1);
+    }
 }
 
 // Added two new objects below (aka instances) built from Workout class using my data
@@ -60,6 +68,8 @@ echo "Total volume: " . $bench->totalVolume() . " lbs\n";
 echo "Intensity: " . $bench->getIntensity() . "\n";
 echo $bench->updateWeight(190) . "\n";
 echo "New intensity: " . $bench->getIntensity() . "\n";
+// Calling method for AI generated method 5: estimated 1 rep max (1RM)
+echo "Estimated 1RM (bench): " . $bench->estimateOneRepMax() . " lbs\n";
 echo "\n";
 echo $squat->summary() . "\n";
 echo "Total volume: " . $squat->totalVolume() . " lbs\n";
