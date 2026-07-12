@@ -49,4 +49,20 @@ class Workout {
         }
     }
 }
+
+// Added two new objects below (aka instances) built from Workout class using my data
+$bench = new Workout("Bench Press", 4, 8, 135, "2026-07-10");
+$squat = new Workout("Squat", 5, 5, 225, "2026-07-11");
+
+// Calling methods to output results with my data
+echo $bench->summary() . "\n";
+echo "Total volume: " . $bench->totalVolume() . " lbs\n";
+echo "Intensity: " . $bench->getIntensity() . "\n";
+echo $bench->updateWeight(190) . "\n";
+echo "New intensity: " . $bench->getIntensity() . "\n";
+echo "\n";
+echo $squat->summary() . "\n";
+echo "Total volume: " . $squat->totalVolume() . " lbs\n";
+echo "Intensity: " . $squat->getIntensity() . "\n";
+
 ?>
